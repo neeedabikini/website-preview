@@ -120,8 +120,8 @@ ul {
 .img--wrapper {
 	display: flex;
 	flex-direction: row;
-	align-items: flex-end;
-	height: 50vh;
+	align-items: center;
+	height: 100vh;
 }
 
 .img--wrapper img {
@@ -137,57 +137,21 @@ ul {
 		transition: 0.15s linear;
 }
 
-.img__01 {
+
+.img--wrapper img {
 	margin-bottom: 0;
-	margin-left: -1rem;
-	height: 69vh;
+
+	/* height: 69vh; */
 	width: auto;
+}
+
+.img__01, .img__04 {
+margin-right: 10%;
 }
 
 .img__02 {
-	margin-bottom: 0;
-	margin-left: 10%;
-	height: 69vh;
-	width: auto;
-}
-
-.img__03 {
-	margin-bottom: 0;
-	margin-left: 10%;
-	height: 69vh;
-	width: auto;
-}
-
-.img__04 {
-	margin-bottom: 0;
-	margin-left: 10%;
-	height: 69vh;
-	width: auto;
-}
-.img__05 {
-	margin-bottom: 0;
-	margin-left: 10%;
-	height: 69vh;
-	width: auto;
-}
-.img__06 {
-	margin-bottom: 0;
-	margin-left: 10%;
-	height: 69vh;
-	width: auto;
-}
-
-.img__07 {
-	margin-bottom: 0;
-	margin-left: 10%;
-	height: 69vh;
-	width: auto;
-}
-.img__08 {
-	margin-bottom: 0;
-	margin-left: 10%;
-	height: 69vh;
-	width: auto;
+	height: 100%;
+width: auto;
 }
 
 /* Breakpoint */
