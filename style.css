@@ -2,7 +2,7 @@
 	--primary-font: 'Arial Narrow', 'Arial', sans-serif;
 	--text-color: #3d342b;
 	--menu-color: #4c00fd;
-	--highlight-color: #84ff00;
+	--highlight-color: #fb7aff;;
 	--white-color: #f1ebd9;
 	font-family: var(--primary-font);
 	color: var(--text-color);
@@ -102,7 +102,7 @@ transform: translate(-50%, -50%);
 .bio p, .bio a {
 	margin: 0 auto;
 	font-size: 1.85rem;
-
+color: black;
 }
 
 ul {
