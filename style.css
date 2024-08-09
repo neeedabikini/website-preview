@@ -1,3 +1,15 @@
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-70%);
+    }
+		100%  {
+        transform: translateX(0%);
+    }
+}
+
 :root {
 	--primary-font: 'Arial Narrow', 'Arial', sans-serif;
 	--text-color: #3d342b;
@@ -115,6 +127,7 @@ ul {
 	position: absolute;
 	bottom: 0;
 	z-index: -5;
+	 
 }
 
 .img--wrapper {
@@ -122,12 +135,16 @@ ul {
 	flex-direction: row;
 	align-items: center;
 	height: 100vh;
+			animation: marquee 240s linear infinite;
+			/* position: relative;
+			left: -200vw; */
 }
 
 .img--wrapper img {
 	 filter: blur(8px);
   -webkit-filter: blur(8px);
 	  -moz-filter: blur(8px);
+
 }
 
 .img--wrapper img:hover {
@@ -135,6 +152,7 @@ ul {
   -webkit-filter: blur(0px);
 	  -moz-filter: blur(0px);
 		transition: 0.15s linear;
+		
 }
 
 
