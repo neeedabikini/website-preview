@@ -120,7 +120,7 @@ main {
 }
 
 .bio {
-	font-size: 1.5rem;
+
 	text-align: center;
 }
 .bio p,
@@ -128,6 +128,7 @@ main {
 	margin: 0 auto;
 	font-size: 1.85rem;
 	color: black;
+	text-align: center;
 }
 
 ul {
@@ -187,14 +188,9 @@ ul {
 /* Breakpoint */
 
 @media (max-width: 990px) {
-	aside p {
-		font-size: 1.46rem;
-		line-height: normal;
-	}
-
-	nav {
-		font-size: calc(0.35em + 0.25vw);
-	}
+.horizontal--scroll {
+	touch-action: pan-x;
+}
 }
 
 @media (max-width: 680px) {
@@ -210,12 +206,9 @@ ul {
 		-moz-animation: none !important;
 		-ms-animation: none !important;
 		animation: none !important;
+		transform: translateX(-5rem);
 	}
-	.img__04 {
-		filter: blur(8px);
-		-webkit-filter: blur(8px);
-		-moz-filter: blur(8px);
-	}
+	
 
 	.img--wrapper img:hover {
 		filter: blur(8px);
@@ -223,11 +216,17 @@ ul {
 		-moz-filter: blur(8px);
 	}
 
-	.img__01,
-	.img__02,
-	.img__05 {
-		display: none;
+	
+
+	main {
+		line-height: 1rem;
 	}
+	.bio p,
+.bio a {
+
+	font-size: 1.25rem;
+	
+}
 }
 
 @media (max-width: 460px) {
@@ -241,9 +240,4 @@ ul {
 		padding: 0;
 	}
 
-	main aside p {
-		width: 84%;
-		margin: 0 auto;
-		transform: translateX(-10px);
-	}
 }
