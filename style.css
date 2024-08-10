@@ -140,6 +140,7 @@ ul {
 	position: absolute;
 	bottom: 0;
 	z-index: -5;
+	width: min-content;
 }
 
 .img--wrapper {
@@ -147,9 +148,10 @@ ul {
 	flex-direction: row;
 	align-items: center;
 	height: 100vh;
-	animation: marquee 240s linear infinite;
+	animation: marquee 180s linear infinite;
 	/* position: relative;
 			left: -200vw; */
+			width: inherit;
 }
 
 .img--wrapper img {
