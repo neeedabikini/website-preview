@@ -1,5 +1,3 @@
-
-
 :root {
 	--primary-font: 'Arial Narrow', 'Arial', sans-serif;
 	--text-color: #3d342b;
@@ -20,11 +18,11 @@
 html,
 body {
 	padding: 0;
+	margin: 0;
 	touch-action: manipulation;
 }
 
 body {
-	width: 100vw;
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
@@ -51,27 +49,29 @@ form {
 .input--text {
 	display: flex;
 	flex-direction: column;
-	margin: 1rem  0;
+	margin: 1rem 0;
 }
 
-input[type="text"], input[type="email"] {
+input[type='text'],
+input[type='email'] {
 	border: 0.5px solid grey;
 	outline: 0.5px solid grey;
 	height: 1rem;
 }
 
-input[type="text"]:focus, input[type="email"]:focus  {
+input[type='text']:focus,
+input[type='email']:focus {
 	border: 1px solid var(--highlight-color);
 	outline: 1px solid var(--highlight-color);
 }
 
 .input--text:first-of-type {
 	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-column-gap: 0.5rem;
+	grid-template-columns: 48% 48%;
+justify-content: space-between;
 }
 
-.input--text:first-of-type span{
+.input--text:first-of-type span {
 	display: flex;
 	flex-direction: column;
 }
@@ -79,15 +79,15 @@ input[type="text"]:focus, input[type="email"]:focus  {
 .input--text label ul {
 	font-size: 0.65rem;
 	font-family: 'Arial', sans-serif;
-		margin: 0;
-		padding-left: 0;
-		color: grey;
+	margin: 0;
+	padding-left: 0;
+	color: grey;
 }
 
 .input--text label ul li {
 	list-style: none;
-padding-left: 4px;
-margin: 0.125rem 0;
+	padding-left: 4px;
+	margin: 0.125rem 0;
 }
 
 .input--radio {
@@ -95,23 +95,28 @@ margin: 0.125rem 0;
 	display: grid;
 }
 
-.input--radio p, .input--text label {
+.input--radio p,
+.input--text label {
 	color: var(--highlight-color);
 }
 
-.input--radio p, .input--check p, .input--textarea p, .input--text input {
+.input--radio p,
+.input--check p,
+.input--textarea p,
+.input--text input {
 	margin: 0.25rem 0;
 }
 
-.input--radio label, .input--check label {
-margin-right: 2rem;
+.input--radio label,
+.input--check label {
+	margin-right: 2rem;
 }
 
 button {
 	width: 100%;
 	font-family: var(--primary-font);
 	border-radius: 0;
-background: white;
+	background: white;
 	font-size: 1rem;
 	border: 1px solid var(--highlight-color);
 	color: var(--highlight-color);
@@ -122,7 +127,6 @@ button:hover {
 	background: var(--highlight-color);
 	color: white;
 }
-
 
 a {
 	cursor: crosshair;
@@ -154,60 +158,27 @@ main {
 	transform: translate(-50%, -50%);
 }
 
-
 /* Breakpoint */
 
 @media (max-width: 990px) {
-.horizontal--scroll {
-	touch-action: pan-x;
-}
+	.horizontal--scroll {
+		touch-action: pan-y;
+	}
+
+	form {
+		width: 70vw;
+	}
 }
 
 @media (max-width: 680px) {
-	nav {
-		justify-content: space-between;
+	form {
+		width: 80vw;
 	}
-	nav a,
-	nav span {
-		margin-right: 0px;
-	}
-	.img--wrapper {
-		-webkit-animation: none !important;
-		-moz-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-		transform: translateX(-5rem);
-	}
-	
-
-	.img--wrapper img:hover {
-		filter: blur(8px);
-		-webkit-filter: blur(8px);
-		-moz-filter: blur(8px);
-	}
-
-	
-
-	main {
-		line-height: 1rem;
-	}
-	.bio p,
-.bio a {
-
-	font-size: 1.25rem;
-	
-}
 }
 
 @media (max-width: 460px) {
-	body {
-		width: 100vw;
-	}
 
-	main {
-		width: inherit;
-		margin: 0 auto;
-		padding: 0;
+	form {
+		width: 94vw;
 	}
-
 }
