@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>n33dabikini</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="form.css" />
+		<link rel="icon" type="image/png" href="favicon.png" />
+	</head>
+	<body>
+		<section class="main__wrapper">
+			<h1>neeedabikini.com</h1>
+			<form action="includes/formhandler.php" method="post">
+				<div class="input--text">
+					<span>
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" />
+					</span>
+					<span
+						><label for="email">Email</label>
+						<input type="email" id="email" name="email"
+					/></span>
+				</div>
+				<div class="input--radio">
+					<p>What are you looking for?</p>
+					<span
+						><input type="radio" id="bikini-top" name="bikinitype" />
+						<label for="bikini-top">Top</label></span
+					>
+
+					<span
+						><input type="radio" id="bikini-bottom" name="bikinitype" />
+						<label for="bikini-bottom">Bottom</label></span
+					>
+					<span
+						><input type="radio" id="bikini-top-bottom" name="bikinitype" />
+						<label for="bikini-top-bottom">Top + Bottom</label></span
+					>
+				</div>
+				<div class="input--radio">
+					<p>Top size:</p>
+					<span>
+						<input type="radio" id="top-tiny" name="top-size" />
+						<label for="top-tiny">Tiny</label>
+					</span>
+					<span>
+						<input type="radio" id="top-a" name="top-size" />
+						<label for="top-a">A cup</label>
+					</span>
+					<span
+						><input type="radio" id="top-b" name="top-size" />
+						<label for="top-b">B cup</label></span
+					>
+					<span>
+						<input type="radio" id="top-c" name="top-size" />
+						<label for="top-c">C cup</label></span
+					>
+					<span
+						><input type="radio" id="top-other" name="top-size" />
+						<input
+							type="text"
+							id="top-other"
+							name="top-size"
+							placeholder="Other"
+					/></span>
+				</div>
+				<div class="input--radio">
+					<p>Coverage:</p>
+					<span>
+						<input type="radio" id="coverage-cheeky" name="coverage" />
+						<label for="coverage-cheeky">Cheeky</label>
+					</span>
+					<span>
+						<input type="radio" id="coverage-tanga" name="coverage" />
+						<label for="coverage-tanga">Tanga</label>
+					</span>
+					<span>
+						<input type="radio" id="coverage-med" name="coverage" />
+						<label for="coverage-med">Medium</label>
+					</span>
+					<span
+						><input type="radio" id="coverage-full" name="coverage" />
+						<label for="coverage-full">Lots</label></span
+					>
+				</div>
+				<div class="input--text">
+					<label for="hip-measurement"
+						>What is your hip measurement &#10141; (xs, s, m, l, xl) or size in
+						inches:
+						<ul>
+							<li>
+								Every bikini has long strings to tie the sides making the
+								bottoms flexible and adjustable.
+							</li>
+						</ul>
+					</label>
+					<input type="text" id="hip-measurement" name="hip-measurement" />
+				</div>
+				<div class="input--radio">
+					<p>Colour:</p>
+					<span>
+						<input type="radio" id="color-black" name="colour" />
+						<label for="color-black">Black</label>
+					</span>
+					<span>
+						<input type="radio" id="color-brown" name="colour" />
+						<label for="coverage-brown">Brown</label>
+					</span>
+					<span>
+						<input type="radio" id="color-pink" name="colour" />
+						<label for="color-pink">Pink</label>
+					</span>
+					<span
+						><input type="radio" id="color-other" name="colour" />
+						<input type="text" id="top-other" name="colour" placeholder="Other"
+					/></span>
+				</div>
+				<div class="input--text">
+					<label for="shipping"
+						>Shipping location:
+						<ul>
+							<li>Pick up will be coordinated together</li>
+						</ul>
+					</label>
+					<input
+						placeholder="Address, City, Country, Postal Code"
+						type="text"
+						id="shipping"
+						name="shipping"
+					/>
+				</div>
+				<button type="submit">Place Your Order</button>
+			</form>
+		</section>
+	</body>
+</html>

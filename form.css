@@ -1,26 +1,4 @@
-@keyframes marquee {
-	0% {
-		transform: translateX(0%);
-	}
-	50% {
-		transform: translateX(-70%);
-	}
-	100% {
-		transform: translateX(0%);
-	}
-}
 
-@-webkit-keyframes marquee {
-	0% {
-		-webkit-transform: translateX(0%);
-	}
-	50% {
-		-webkit-transform: translateX(-70%);
-	}
-	100% {
-		-webkit-transform: translateX(0%);
-	}
-}
 
 :root {
 	--primary-font: 'Arial Narrow', 'Arial', sans-serif;
@@ -43,13 +21,15 @@ html,
 body {
 	padding: 0;
 	touch-action: manipulation;
-	cursor: ew-resize;
 }
 
 body {
 	width: 100vw;
-	overflow-y: hidden;
-	overflow-x: scroll;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+h1 {
+	text-align: center;
 }
 
 a {
@@ -64,7 +44,8 @@ form {
 	background-color: white;
 	width: 50vw;
 	margin: 0 auto;
-	cursor: default
+	cursor: default;
+	margin-bottom: 5%;
 }
 
 .input--text {
@@ -73,16 +54,40 @@ form {
 	margin: 1rem  0;
 }
 
+input[type="text"], input[type="email"] {
+	border: 0.5px solid grey;
+	outline: 0.5px solid grey;
+	height: 1rem;
+}
+
+input[type="text"]:focus, input[type="email"]:focus  {
+	border: 1px solid var(--highlight-color);
+	outline: 1px solid var(--highlight-color);
+}
+
+.input--text:first-of-type {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-column-gap: 0.5rem;
+}
+
+.input--text:first-of-type span{
+	display: flex;
+	flex-direction: column;
+}
+
 .input--text label ul {
-	font-size: 0.75rem;
-	/* font-style: italic; */
-		padding-left:0.75rem;
+	font-size: 0.65rem;
+	font-family: 'Arial', sans-serif;
+		margin: 0;
+		padding-left: 0;
+		color: grey;
 }
 
 .input--text label ul li {
-	list-style: "⤑";
+	list-style: none;
 padding-left: 4px;
-margin: 0;
+margin: 0.125rem 0;
 }
 
 .input--radio {
@@ -90,6 +95,9 @@ margin: 0;
 	display: grid;
 }
 
+.input--radio p, .input--text label {
+	color: var(--highlight-color);
+}
 
 .input--radio p, .input--check p, .input--textarea p, .input--text input {
 	margin: 0.25rem 0;
@@ -99,22 +107,30 @@ margin: 0;
 margin-right: 2rem;
 }
 
-
-
-
-aside p,
-nav span,
-.img--wrapper img:hover {
-	cursor: ew-resize;
+button {
+	width: 100%;
+	font-family: var(--primary-font);
+	border-radius: 0;
+background: white;
+	font-size: 1rem;
+	border: 1px solid var(--highlight-color);
+	color: var(--highlight-color);
+	margin: 2rem 0;
 }
 
-aside a {
+button:hover {
+	background: var(--highlight-color);
+	color: white;
+}
+
+
+a {
 	cursor: crosshair;
 	text-decoration: underline;
 	text-underline-offset: 6px;
 }
 
-aside a:hover {
+a:hover {
 	text-decoration: none;
 	background-color: var(--highlight-color);
 	text-decoration: underline;
@@ -125,29 +141,6 @@ em {
 	font-family: var(--sans-serif-font);
 	font-size: 0.85rem;
 	font-weight: bold;
-}
-
-nav {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	color: var(--menu-color);
-	align-items: center;
-	width: 100%;
-	font-size: calc(0.5em + 0.25vw);
-	font-family: var(--primary-font);
-}
-
-nav span,
-nav a {
-	margin-right: 2em;
-	color: inherit;
-}
-
-nav a:hover {
-	color: var(--white-color);
-	background-color: var(--menu-color);
-	cursor: crosshair;
 }
 
 main {
@@ -161,71 +154,6 @@ main {
 	transform: translate(-50%, -50%);
 }
 
-.bio {
-
-	text-align: center;
-}
-.bio p,
-.bio a {
-	margin: 0 auto;
-	font-size: 1.85rem;
-	color: black;
-	text-align: center;
-}
-
-ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-
-.horizontal--scroll {
-	position: absolute;
-	bottom: 0;
-	z-index: -5;
-	width: min-content;
-}
-
-.img--wrapper {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	height: 100vh;
-	animation: marquee 180s linear infinite;
-	/* position: relative;
-			left: -200vw; */
-			width: inherit;
-}
-
-.img--wrapper img {
-	filter: blur(8px);
-	-webkit-filter: blur(8px);
-	-moz-filter: blur(8px);
-}
-
-.img--wrapper img:hover {
-	filter: blur(0px);
-	-webkit-filter: blur(0px);
-	-moz-filter: blur(0px);
-	transition: 0.15s linear;
-}
-
-.img--wrapper img {
-	margin-bottom: 0;
-
-	/* height: 69vh; */
-	width: auto;
-}
-
-.img__01,
-.img__04 {
-	margin-right: 10%;
-}
-
-.img__02 {
-	height: 100%;
-	width: auto;
-}
 
 /* Breakpoint */
 
