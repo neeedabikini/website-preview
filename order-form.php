@@ -14,72 +14,71 @@
 				<div class="input--text">
 					<span>
 						<label for="name">Name</label>
-						<input type="text" id="name" name="name" />
+						<input required type="text" id="name" name="name" />
 					</span>
 					<span
 						><label for="email">Email</label>
-						<input type="email" id="email" name="email"
+						<input required type="email" id="email" name="email"
 					/></span>
 				</div>
 				<div class="input--radio">
 					<p>What are you looking for?</p>
 					<span
-						><input type="radio" id="bikini-top" name="bikinitype" />
+						><input value="Top" type="radio" id="bikini-top" name="selection" />
 						<label for="bikini-top">Top</label></span
 					>
-
 					<span
-						><input type="radio" id="bikini-bottom" name="bikinitype" />
+						><input value="Bottom" type="radio" id="bikini-bottom" name="selection" />
 						<label for="bikini-bottom">Bottom</label></span
 					>
 					<span
-						><input type="radio" id="bikini-top-bottom" name="bikinitype" />
+						><input value="Top + Bottom" type="radio" id="bikini-top-bottom" name="selection" />
 						<label for="bikini-top-bottom">Top + Bottom</label></span
 					>
 				</div>
 				<div class="input--radio">
 					<p>Top size:</p>
 					<span>
-						<input type="radio" id="top-tiny" name="top-size" />
+						<input value="Tiny" type="radio" id="top-tiny" name="top-size" />
 						<label for="top-tiny">Tiny</label>
 					</span>
 					<span>
-						<input type="radio" id="top-a" name="top-size" />
+						<input value="A cup" type="radio" id="top-a" name="top-size" />
 						<label for="top-a">A cup</label>
 					</span>
 					<span
-						><input type="radio" id="top-b" name="top-size" />
+						><input value="B cup" type="radio" id="top-b" name="top-size" />
 						<label for="top-b">B cup</label></span
 					>
 					<span>
-						<input type="radio" id="top-c" name="top-size" />
+						<input value="C cup" type="radio" id="top-c" name="top-size" />
 						<label for="top-c">C cup</label></span
 					>
 					<span
-						><input type="radio" id="top-other" name="top-size" />
+						><input value="other - "type="radio" id="top-other" name="top-size" />
 						<input
 							type="text"
 							id="top-other"
 							name="top-size"
-							placeholder="Other"
+							
 					/></span>
 				</div>
 				<div class="input--radio">
 					<p>Coverage:</p>
 					<span>
-						<input type="radio" id="coverage-cheeky" name="coverage" />
+						<input value="Cheeky" type="radio" id="coverage-cheeky" name="coverage" />
 						<label for="coverage-cheeky">Cheeky</label>
 					</span>
 					<span>
-						<input type="radio" id="coverage-tanga" name="coverage" />
+						<input value="Tanga" type="radio" id="coverage-tanga" name="coverage" />
 						<label for="coverage-tanga">Tanga</label>
 					</span>
 					<span>
-						<input type="radio" id="coverage-med" name="coverage" />
+						<input value="Medium" type="radio" id="coverage-med" name="coverage" />
 						<label for="coverage-med">Medium</label>
 					</span>
 					<span
-						><input type="radio" id="coverage-full" name="coverage" />
+						><input value="Lots" type="radio" id="coverage-full" name="coverage" />
 						<label for="coverage-full">Lots</label></span
 					>
 				</div>
@@ -94,41 +93,41 @@
 							</li>
 						</ul>
 					</label>
-					<input type="text" id="hip-measurement" name="hip-measurement" />
+					<input type="text" id="hip-measurement" name="hip-size" />
 				</div>
 				<div class="input--radio">
 					<p>Colour:</p>
 					<span>
-						<input type="radio" id="color-black" name="colour" />
+						<input value="Black" type="radio" id="color-black" name="colour" />
 						<label for="color-black">Black</label>
 					</span>
 					<span>
-						<input type="radio" id="color-brown" name="colour" />
+						<input value="Brown" type="radio" id="color-brown" name="colour" />
 						<label for="coverage-brown">Brown</label>
 					</span>
 					<span>
-						<input type="radio" id="color-pink" name="colour" />
+						<input value="Pink" type="radio" id="color-pink" name="colour" />
 						<label for="color-pink">Pink</label>
 					</span>
 					<span
-						><input type="radio" id="color-other" name="colour" />
-						<input type="text" id="top-other" name="colour" placeholder="Other"
+						><input value="Other - " type="radio" id="color-other" name="colour" />
+						<input type="text" id="top-other" name="colour" 
 					/></span>
 				</div>
 				<div class="input--text">
 					<label for="shipping"
 						>Shipping location:
 						<ul>
-							<li>Pick up will be coordinated together</li>
+							<li>Pick up will be coordinated together.</li>
 						</ul>
 					</label>
-					<input
+					<input required 
 						type="text"
 						id="shipping"
 						name="shipping"
 					/>
 				</div>
-				<button type="submit">Place Your Order</button>
+				<button type="submit">Place Your Order <3</button>
 			</form>
 		</section>
 	</body>

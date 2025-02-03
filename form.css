@@ -54,15 +54,17 @@ form {
 
 input[type='text'],
 input[type='email'] {
-	border: 0.5px solid grey;
-	outline: 0.5px solid grey;
+	border: 0.5px solid var(--text-color);
+	outline: 0.5px solid var(--text-color);
 	height: 1rem;
+		border-radius: 0;
 }
 
 input[type='text']:focus,
 input[type='email']:focus {
 	border: 1px solid var(--highlight-color);
 	outline: 1px solid var(--highlight-color);
+	border-radius: 0;
 }
 
 .input--text:first-of-type {
@@ -86,7 +88,7 @@ justify-content: space-between;
 
 .input--text label ul li {
 	list-style: none;
-	padding-left: 4px;
+	padding-left: 1px;
 	margin: 0.125rem 0;
 }
 
@@ -114,13 +116,14 @@ justify-content: space-between;
 
 button {
 	width: 100%;
+	height: 3rem;
 	font-family: var(--primary-font);
 	border-radius: 0;
 	background: white;
 	font-size: 1rem;
 	border: 2px solid var(--highlight-color);
 	color: white;
-	margin: 1rem 0 2rem 0;
+	margin: 0.5rem 0 2rem 0;
 	background: var(--highlight-color);
 }
 
