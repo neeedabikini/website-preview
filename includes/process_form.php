@@ -19,8 +19,7 @@ exit();
 }
 
 // SEND TO
-//  $to = "n33dabikini@gmail.com"
-$to = "rupa.morzaria@gmail.com";
+$to = "user@gmail.com";
 
 // EMAIL SUBJECT
 $subject = "New Order";
@@ -37,44 +36,3 @@ header("Location: ../order-success.htm");
 } else {
   header("Location: ../index.htm");
 }
-
-// SECURITY RULES USING PHP:
-// > never trust data submitted by a user
-
-
-// ---- OLD ... FROM YOUTUBE TUTORIAL
-
-// echo "YOU HAVE A NEW ORDER FROM:";
-// echo "<br>";
-// echo $name;
-// echo "<br>";
-// echo $email;
-// echo "<br>";
-// echo "<br>";
-// echo "THEY HAVE SELECTED:";
-// echo "<br>";
-
-// echo $selection;
-// echo " (bikini order)";
-// echo "<br>";
-
-// echo $top;
-// echo " (top size)";
-// echo "<br>";
-
-// echo $coverage;
-// echo " (coverage)";
-// echo "<br>";
-
-// echo $hip;
-// echo " (hip size)";
-// echo "<br>";
-
-// echo $colour;
-// echo " (colour)";
-// echo "<br>";
-// echo "<br>";
-
-// echo "TO BE SHIPPED TO:";
-// echo "<br>";
-// echo $shipping;
