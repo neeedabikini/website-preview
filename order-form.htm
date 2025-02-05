@@ -8,9 +8,13 @@
 		<link rel="icon" type="image/png" href="favicon.png" />
 	</head>
 	<body>
+
 		<section class="main__wrapper">
 			<h1>neeedabikini.com</h1>
-			<form action="includes/process_form.php" method="POST">
+			<form
+			action=""
+				method="POST"
+			>
 				<div class="input--text">
 					<span>
 						<label for="name">Name</label>
@@ -21,6 +25,7 @@
 						<input required type="email" id="email" name="email"
 					/></span>
 				</div>
+
 				<div class="input--radio">
 					<p>What are you looking for?</p>
 					<span
@@ -28,14 +33,25 @@
 						<label for="bikini-top">Top</label></span
 					>
 					<span
-						><input value="Bottom" type="radio" id="bikini-bottom" name="selection" />
+						><input
+							value="Bottom"
+							type="radio"
+							id="bikini-bottom"
+							name="selection"
+						/>
 						<label for="bikini-bottom">Bottom</label></span
 					>
 					<span
-						><input value="Top + Bottom" type="radio" id="bikini-top-bottom" name="selection" />
+						><input
+							value="Top + Bottom"
+							type="radio"
+							id="bikini-top-bottom"
+							name="selection"
+						/>
 						<label for="bikini-top-bottom">Top + Bottom</label></span
 					>
 				</div>
+
 				<div class="input--radio">
 					<p>Top size:</p>
 					<span>
@@ -55,30 +71,52 @@
 						<label for="top-c">C cup</label></span
 					>
 					<span
-						><input value="other - "type="radio" id="top-other" name="top-size" />
-						<input
-							type="text"
+						><input
+							value="other - "
+							type="radio"
 							id="top-other"
 							name="top-size"
-							
-					/></span>
+						/>
+						<label for="top-other">Other</label>
+					</span>
 				</div>
+
 				<div class="input--radio">
 					<p>Coverage:</p>
 					<span>
-						<input value="Cheeky" type="radio" id="coverage-cheeky" name="coverage" />
+						<input
+							value="Cheeky"
+							type="radio"
+							id="coverage-cheeky"
+							name="coverage"
+						/>
 						<label for="coverage-cheeky">Cheeky</label>
 					</span>
 					<span>
-						<input value="Tanga" type="radio" id="coverage-tanga" name="coverage" />
+						<input
+							value="Tanga"
+							type="radio"
+							id="coverage-tanga"
+							name="coverage"
+						/>
 						<label for="coverage-tanga">Tanga</label>
 					</span>
 					<span>
-						<input value="Medium" type="radio" id="coverage-med" name="coverage" />
+						<input
+							value="Medium"
+							type="radio"
+							id="coverage-med"
+							name="coverage"
+						/>
 						<label for="coverage-med">Medium</label>
 					</span>
 					<span
-						><input value="Lots" type="radio" id="coverage-full" name="coverage" />
+						><input
+							value="Lots"
+							type="radio"
+							id="coverage-full"
+							name="coverage"
+						/>
 						<label for="coverage-full">Lots</label></span
 					>
 				</div>
@@ -110,9 +148,9 @@
 						<label for="color-pink">Pink</label>
 					</span>
 					<span
-						><input value="Other - " type="radio" id="color-other" name="colour" />
-						<input type="text" id="top-other" name="colour" 
-					/></span>
+						><input value="Other" type="radio" id="color-other" name="colour" />
+						<label for="color-other">Other</label></span
+					>
 				</div>
 				<div class="input--text">
 					<label for="shipping"
@@ -121,11 +159,16 @@
 							<li>Pick up will be coordinated together.</li>
 						</ul>
 					</label>
-					<input required 
-						type="text"
-						id="shipping"
-						name="shipping"
-					/>
+					<input required type="text" id="shipping" name="shipping" />
+				</div>
+				<div class="input--text">
+					<label for="comments"
+						>Additional comments:
+						<ul>
+							<li>Feel free to add anything else you think is important to know.</li>
+						</ul>
+					</label>
+					<textarea maxlength="150" rows="2" id="comments" name="comments"></textarea>
 				</div>
 				<button type="submit" value="Submit">Place Your Order <3</button>
 			</form>
