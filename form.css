@@ -211,12 +211,6 @@ main {
 	form {
 		width: 70vw;
 	}
-}
-
-@media (max-width: 680px) {
-	form {
-		width: 90vw;
-	}
 
 	.input--text:first-of-type {
 		display: block;
@@ -228,4 +222,11 @@ main {
 	.input--text:first-of-type span+span {
 		margin-top: 0.5rem;
 	}
+}
+
+@media (max-width: 680px) {
+	form {
+		width: 90vw;
+	}
+
 }
